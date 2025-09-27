@@ -1,0 +1,30 @@
+name: sentiment_classifier_app
+
+services:
+  fastapi-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.fastapi
+    image: ashishkar007/fastapi-backend:latest
+    container_name: fastapi_backend
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s 
+
+  streamlit-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    image: ashishkar007/streamlit-frontend:latest
+    container_name: streamlit_frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - fastapi-backend
+    restart: unless-stopped
