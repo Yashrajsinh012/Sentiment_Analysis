@@ -15,7 +15,9 @@ git clone https://github.com/Yashrajsinh012/Sentiment_Analysis.git
 
 docker-compose up --build
 ```
-figures/Screenshot 2025-09-27 231718.png
+![fig1](figures/Screenshot_2025-09-27_231718.png)
+![fig2](figures/Screenshot_2025-09-27_231703.png)
+![fig3](figures/Screenshot_2025-09-27_231645.png)
 
 The setup will look like this
 [demo](Demo_video_SA.mp4)
@@ -67,6 +69,7 @@ The network jointly optimizes:
 - Deepanshi Acharya
 - Kshiti Mulani
   
+
 
 
 
