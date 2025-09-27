@@ -16,7 +16,7 @@ The model combines contextual embeddings, sequential modeling, attention for int
 ---
 
 ## Architecture
-
+(architecture)[figures/Screenshot 2025-07-16 013851.png]
 The network jointly optimizes:  
 - **Cross-Entropy Loss** → improves classification accuracy.  
 - **Triplet Loss** → enforces discriminative embeddings for better generalization.  
@@ -41,4 +41,5 @@ The network jointly optimizes:
 ## Applications
 
 - **Fine-grained sentiment analysis** on product reviews.  
+
 - Works well under **limited supervision**.  
