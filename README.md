@@ -24,7 +24,7 @@ The network jointly optimizes:
 ---
 
 ## Training Strategy
-
+![strategy](figures/Screenshot_2025-07-16_013941.png)
 1. **Joint Optimization**  
    - Classification loss for sentiment prediction.  
    - Triplet loss for embedding regularization.  
@@ -43,4 +43,5 @@ The network jointly optimizes:
 - **Fine-grained sentiment analysis** on product reviews.  
 
 - Works well under **limited supervision**.  
+
 
