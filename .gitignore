@@ -13,4 +13,4 @@ data
 .Python-version
 pyptoject.toml
 uv.lock
-
+.models/*.pt
