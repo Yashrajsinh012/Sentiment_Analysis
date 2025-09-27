@@ -10,7 +10,7 @@ docker pull ashishkar007/streamlit-frontend:latest
 docker pull ashishkar007/fastapi-backend:latest
 ```
 The setup will look like this
-![demo](Demo_video_SA.mp4)
+[demo](Demo_video_SA.mp4)
 
 ---
 
@@ -59,6 +59,7 @@ The network jointly optimizes:
 - Deepanshi Acharya
 - Kshiti Mulani
   
+
 
 
 
