@@ -9,6 +9,13 @@ Steps to try it out on your on pc.
 docker pull ashishkar007/streamlit-frontend:latest
 docker pull ashishkar007/fastapi-backend:latest
 ```
+or clone this repo using 
+```bash
+git clone https://github.com/Yashrajsinh012/Sentiment_Analysis.git
+
+docker-compose up --build
+```
+
 The setup will look like this
 [demo](Demo_video_SA.mp4)
 
@@ -59,6 +66,7 @@ The network jointly optimizes:
 - Deepanshi Acharya
 - Kshiti Mulani
   
+
 
 
 
