@@ -3,6 +3,15 @@
 This repository contains a deep learning framework for **fine-grained sentiment classification**.  
 The model combines contextual embeddings, sequential modeling, attention for interpretability, and metric-based learning to achieve robust performance under low-supervision settings.  
 
+Steps to try it out on your on pc.
+
+```bash
+docker pull ashishkar007/streamlit-frontend:latest
+docker pull ashishkar007/fastapi-backend:latest
+```
+The setup will look like this
+![demo](Demo_video_SA.mp4)
+
 ---
 
 ## Key Features
@@ -50,6 +59,7 @@ The network jointly optimizes:
 - Deepanshi Acharya
 - Kshiti Mulani
   
+
 
 
 
