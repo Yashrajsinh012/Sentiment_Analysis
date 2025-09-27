@@ -42,8 +42,15 @@ The network jointly optimizes:
 ## Applications
 
 - **Fine-grained sentiment analysis** on product reviews.  
+- Works well under **limited supervision**.
 
-- Works well under **limited supervision**.  
+## Authors
+- Ashish Kar
+- Yashrajsinh Chudasama
+- Deepanshi Acharya
+- Kshiti Mulani
+  
+
 
 
 
