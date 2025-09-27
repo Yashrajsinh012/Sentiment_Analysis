@@ -9,7 +9,7 @@ from typing import List
 
 from transformers import BertTokenizer
 from model import BERT_BiLSTM_Attention, SentimentClassifier
-from utils import extract_single_embedding, calculate_entropy
+from utils import extract_embeddings, calculate_entropy
 
 app = FastAPI(
     title="Sentiment Analysis API",
@@ -68,13 +68,12 @@ def predict(request: TextRequest):
         raise HTTPException(status_code=500, detail="Models are not loaded.")
 
     # Generate embedding for the input text
-    embedding = extract_single_embedding(request.text, encoder_model, tokenizer, device)
+    embedding = extract_embeddings(request.text, encoder_model, tokenizer, device)
 
     # Get model predictions
     with torch.no_grad():
         logits = classifier_model(embedding)
-        probs = torch.softmax(logits, dim=1).cpu().numpy()[0]  # Get probs for the single item
-
+        probs = torch.softmax(logits, dim=1).cpu().numpy()[0] 
     # Process predictions
     prediction = np.argmax(probs)
     confidence = np.max(probs)
